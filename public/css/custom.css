@@ -1,0 +1,42 @@
+body, html {
+    font-family: 'Ubuntu', sans-serif;
+    height: 100%;
+    width: 100%;
+    background-color: #eee;
+}
+
+body {
+  //padding-top: 2rem;
+}
+
+i.fa {
+  padding: 1px;
+}
+
+.card {
+    font-size: 1em;
+    overflow: hidden;
+    margin-top: 10px;
+    border: none;
+    border-radius: .3rem;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+}
+
+
+
+.header {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: .3rem;
+  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+
+}
+
+.logo-card {
+  background-color: #eee;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+

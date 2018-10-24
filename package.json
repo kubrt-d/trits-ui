@@ -1,0 +1,19 @@
+{
+  "name": "trits",
+  "version": "0.0.1",
+  "description": "IOTA Trits game for fun and learning",
+  "main": "trits.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "iota"
+  ],
+  "author": "Marek Tichý",
+  "license": "MIT",
+  "dependencies": {
+    "crc": "^3.4.4",
+    "express": "^4.15.4",
+    "minimist": "^1.2.0"
+  }
+}

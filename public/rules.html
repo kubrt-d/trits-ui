@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+  <head>
+      <head>
+      <title>Trits Game - Rules</title>
+      
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.5/sweetalert2.min.css">
+      <link rel="stylesheet" type="text/css" href="css/custom.css">    
+      <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/img/apple-touch-icon-57x57.png" />
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/apple-touch-icon-114x114.png" />
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/apple-touch-icon-72x72.png" />
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144x144.png" />
+      <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/img/apple-touch-icon-120x120.png" />
+      <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/img/apple-touch-icon-152x152.png" />
+      <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32" />
+      <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16" />
+      <meta name="application-name" content="&nbsp;"/>
+      <meta name="msapplication-TileColor" content="#FFFFFF" />
+      <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+      </head>
+  </head>
+  <body>
+     <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-block">
+              <h1> TRITS</h1>
+              <h3> a zero-sum IOTA game</h3>
+              <p class="pull-right"> ... have some tangle I<sub>(2)</sub>oT fun ...</p>
+            </div>  
+          </div> 
+        </div>  
+        <div class="col-md-4">
+          <div class="card logo-card">
+            <div class="card-block logo-card">
+             <img id="logo" src="/img/trits_logo_middle.png" class="img-responsive mx-auto d-block" />
+            </div>
+          </div> 
+        </div>  
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-block">
+              <p>Players online: 12</p>
+              <p>TRITS Bank balance: 12</p>
+              <p> <a href="/"> Dashboard </a></p>
+            </div>  
+          </div>  
+        </div>  
+      </div>
+     </div> 
+      <div class="container" id="rules">
+        <div class="card">
+            <div class="card-block">
+        <h1 id="trits-game">Trits game</h1>
+<p>The Trits is a fully transparent, <a href="https://en.wikipedia.org/wiki/Zero-sum_game" target="_blank">zero-sum</a> and no <a href="https://cs.wikipedia.org/wiki/House_Edge" target="_blank">house-edge</a> casino game designed for the <a href="https://iota.org/" target="_blank">IOTA cryptocurrency</a>. It can be played either by humans and machines. It aims to demonstrate the possibilities of <a href="http://iota.dance/live/" target="_blank">the Tangle</a>, while still being fun and thrill.</p>
+<p>The game itself was conceived as a humble honor to the memory of <a href="https://www.youtube.com/watch?v=oM1SflhJDoc" target="_blank">John Forbes Nash Jr</a> and is a cross-breed between a <a href="https://en.wikipedia.org/wiki/Medal_game#Pusher_gamex_type" target="_blank">coin pusher</a> and a <a href="https://en.wikipedia.org/wiki/Fidget_spinner" target="_blank">fidget spinner</a>.</p>
+<p><img src="https://archive.org/download/spinner_middle/spinner_middle.png"/></p>
+<p>At the beginning, there is a pile of coins in the middle of the spinner. The ultimate aim of the game is to disturb the spinner balance by placing a coin on the spinner arms. However, each coin placement is determined by a throw of a “three-sided dice”.</p>
+<p>The spinner loses balance and flips when the number of coins on one side outnumbers the number of coins on any other arm <strong>by three</strong>. A loss of the spinner balance finishes the game immediately and determines the winning arm. If you had at least one of your coins placed on one winning arm, you are among the winners.</p>
+<p>But of course, there is a gotcha. One of the arms belongs to the &quot;evil&quot; Bank and when this arm happens to be the winning arm, the Bank takes it all. The good news is – the Bank uses it solely for funding new games in the future. In other words, the Bank just looks after the progressive jackpot, so you can always have a chance to win back what you might have lost.</p>
+<h1 id="game-rules">Game rules</h1>
+<p>Some terms explained first:</p>
+<p><strong>Bank</strong> – the treasurer of coins lost in previous games, used mostly for adding a bonus to each game. The Bank never participates in the games as a player itself, but it can seed new games.</p>
+<p><strong>Initiator (Seeder)</strong> – is the player who started the game by placing the first coin</p>
+<p><strong>Coin</strong> – a single token used in the game</p>
+<p><strong>Nominal</strong> – the nominal value of one coin in IOTAs. The nominal is set at the very beginning of each game</p>
+<p><strong>Total</strong> – the total value of all the coins on the table.</p>
+<p><strong>Spinner arms</strong> – the spinner has three arms (as spinners do) marked by letters <strong>F (f</strong>irst), <strong>S (s</strong>econd<strong>)</strong>, <strong>G (g</strong>otcha) and the center marked by <strong>I (i</strong>nitial). The <strong>G</strong> arm belongs to the Bank.</p>
+<p><strong>The winning arm</strong> – the spinner arm on which the last coin in the game has been placed</p>
+<p><strong>Winners</strong> – the players who have placed at least one coin on the winning arm</p>
+<p><strong>The Winner</strong> – the player who has placed the last coin on the winning arm</p>
+<p><strong>Game address</strong> – each game has a unique IOTA address.</p>
+<h3 id="staring-the-game">Staring the game</h3>
+<p>Anybody can start (seed) the game by placing a single coin in the middle (i.e. sending the first IOTA transaction to the empty game address). This sets the nominal and starts the game. The coin will be placed on the <strong>I</strong> spot in the middle.</p>
+<h3 id="bonus">Bonus</h3>
+<p>The moment a new game is seeded, the bank is obliged to add four or five coins on the <strong>I</strong> spot. This happens always, unless the Bank balance is too low. The Bank balance is publicly announced.</p>
+<h3 id="playing-the-game">Playing the game</h3>
+<p>You play the game by throwing your coins into it (i.e. sending the IOTA transaction with the same nominal value to the game address). The game runs <strong>until</strong> the difference between the sides with the lowest and highest number of coins reaches exactly <strong>3</strong> (three) coins<strong>.</strong></p>
+<h3 id="finishing-the-game">Finishing the game</h3>
+<p>The game is finished at the very moment the last coin which causes the 3-coin difference is placed on the spinner. The side on which the last coin has been placed determines the winning arm.</p>
+<p>Note: A game can come to an end also by expiring – games not finished within 24 hours will expire and all the transactions are fully reimbursed.</p>
+<h3 id="distributing-the-winnings">Distributing the winnings</h3>
+<p>1) If the winning arm is <strong>G</strong>, the entire total goes to the <strong>Bank</strong></p>
+<p>2) If the winning side is <strong>F</strong> or <strong>S</strong>, <strong>3</strong> coins (a triple !) are send back to the game seeder.</p>
+<p>3) The total* of what is left on the table after 1) and 2) is distributed according to the following rules:</p>
+<ul>
+<li>All the coins put on the winning side by the winners are reimbursed</li>
+<li>The rest goes to the winner</li>
+</ul>
+<p>*4) When the total is not divisible, the modulo goes to the Bank</p>
+<h1 id="the-bank-and-the-dashboard">The Bank and the Dashboard</h1>
+<p>The Trits game is fully transparent - meaning that each game can be completely backtracked by inspecting the IOTA Tangle. The random “three sided dice throw” results are in fact derived deterministically from the Tangle actual state, thus using the Tangle as a kind of pseudo-random number generator with a history.</p>
+<p>The Bank maintains the incentives – it keeps the game going. It’s not there to make a profit.</p>
+<p>There are always 23 (John Nash's favourite prime number) tables named after biggest cities on which the Trits game can be played, and their status is displayed on the public dashboard. The 24th called Atlanta is a sandbox. The Bank’s role is to keep them all active, if possible, by seeding new games and adding the bonus to thenewly seeded games.</p>
+<h1 id="good-luck">Good Luck</h1>
+<p>Your odds of winning in The Trits game are equal to the theoretical maximum. The house edge is practically <strong>0%</strong>, while the wins at the individual games are reasonably high. Even if you loose, the money is not lost forever, as it can always be won back in future games.</p>
+<p>If you have to gamble, this is your safest home.</p>
+</div>
+</div>
+      <hr>
+
+      <footer>
+        <p>In memory of John Forbes Nash Jr.</p>
+      </footer>
+    </div> <!-- /container -->
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!--script src="https://cdn.jsdelivr.net/npm/vue"></script-->  
+    <!-- script src="/component/peer.js"></script -->    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.5/sweetalert2.min.js"></script>       
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="/js/app.js"></script>
+    </body>
+</html>
+    
